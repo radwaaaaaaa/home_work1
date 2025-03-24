@@ -3,7 +3,7 @@
 //Ensure that the function correctly identifies prime numbers and handles edge cases where start is
 //greater than
 //end
-oid main() {
+void main() {
   int start = 10;
   int end = 50;
 

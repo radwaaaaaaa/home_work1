@@ -5,3 +5,22 @@
  - returnBook(String isbn): Marks a book as available again.
  - searchByTitle(String title): Returns books matching the title.
  Ensure that the system correctly updates the book's availability*/
+
+import 'class_book.dart';
+import 'class_library.dart';
+
+void main() {
+  Book book1 = Book(title: 'Rodrick Rules', author: 'Jeff Kinney', isbn: '1');
+  Book book2 = Book(title: 'Ghosts', author: 'Raina Telgemeier', isbn: '2');
+
+  Library library = Library();
+
+  library.addBook(book1);
+  library.addBook(book2);
+
+  library.searchByTitle('Rodrick Rules');
+  library.borrowBook('1');
+  library.borrowBook('4');
+
+  library.returnBook('1');
+}
