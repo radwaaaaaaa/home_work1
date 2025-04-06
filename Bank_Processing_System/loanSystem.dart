@@ -4,9 +4,9 @@ import 'classLoan.dart';
 void main() {
   LoanProcessingSystem loanSystem = LoanProcessingSystem();
 
-  PersonalLoan personalLoan = PersonalLoan('Alice', 30000);
-  HomeLoan homeLoan = HomeLoan('Bob', 600000);
-  CarLoan carLoan = CarLoan('Charlie', 70000);
+  PersonalLoan personalLoan = PersonalLoan('Radwa', 30000);
+  HomeLoan homeLoan = HomeLoan('Ahmed', 600000);
+  CarLoan carLoan = CarLoan('Ali', 70000);
 
   loanSystem.applyLoan(personalLoan);
   loanSystem.applyLoan(homeLoan);
